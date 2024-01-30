@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import freecodecamplogo from './imagen/FreeCodeCamp_logo.png'
+import ListadeTareas from './Componentess/ListadeTareas';
+
+
+/**
+ * hacer un cd mis-tareas y luego npm start
+ */
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-tareas">
+      <div className='frecodecamp-logo-contenedor'>
+        <img 
+        src={freecodecamplogo} 
+        className='freecode-camp-logo'/>
+      </div>
+      <div className='tarea-lista-principal'>
+        <h1>Mis tareas</h1>
+        <ListadeTareas/>
+      </div>
     </div>
   );
 }
